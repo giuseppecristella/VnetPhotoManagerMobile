@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFlayout.Register">
+  <ScrollView>
+    <StackLayout Orientation="Vertical" Padding="30" Spacing="10">
+      <StackLayout Orientation="Horizontal" Spacing="5">
+        <Label Text="Nome" Font="Large" VerticalOptions="End"/>
+        <Entry x:Name="entryName" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal" Spacing="5">
+        <Label Text="Cognome" Font="Large" VerticalOptions="End"/>
+        <Entry x:Name="entrySurname" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal" Spacing="5">
+        <Label Text="Email" Font="Large" VerticalOptions="End"/>
+        <Entry x:Name="entryEmail" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal" Spacing="5">
+        <Label Text="Password" Font="Large" VerticalOptions="End"/>
+        <Entry x:Name="entryPsw" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal" Spacing="5">
+        <Label Text="Conferma Password" Font="Large" VerticalOptions="End"/>
+        <Entry x:Name="entryPswConfirm" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal" Spacing="5">
+        <Label Text="Cellulare" Font="Large" VerticalOptions="End"/>
+        <Entry x:Name="entryPhone" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal" Spacing="5">
+        <Label Text="Codice Cliente" Font="Large" VerticalOptions="End"/>
+        <Entry x:Name="entryClientCode" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal" Spacing="5">
+        <Label x:Name="labelSummary" Text="" Font="Large" VerticalOptions="End"/>
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal" Spacing="5">
+        <Button Text="Registra"
+              HorizontalOptions="Center"
+              VerticalOptions="CenterAndExpand"
+                Clicked="OnRegisterClicked" />
+      </StackLayout>
+
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFlayout.Login">
+  <ScrollView>
+    <StackLayout Orientation="Vertical" Padding="30" Spacing="10">
+      <StackLayout Orientation="Horizontal" Spacing="5">
+        <Label Text="Username (Email)" Font="Large" VerticalOptions="End"/>
+        <Entry x:Name="entryUserName" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal" Spacing="5">
+        <Label Text="Password" Font="Large" VerticalOptions="End"/>
+        <Entry x:Name="entryPsw" HorizontalOptions="FillAndExpand"/>
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal" Spacing="5">
+        <Button Text="Login"
+              HorizontalOptions="Center"
+              VerticalOptions="CenterAndExpand"
+                Clicked="OnLoginClicked" />
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
